@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.gamecontainer{
+    background-image: url(istockphoto-1216009620-170667a.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+
+.shinchan{
+     background-image: url(kindpng_4904208.png); 
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 270px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -35px;
+    
+    left: 290px;  
+}
+
+.obstacle{
+    background-image: url(car.png); 
+    background-size: 200px 150px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vw;
+    height: 270px;
+    bottom: 0;
+    left:70vw;
+    margin-bottom: -36px;
+    /* margin-left: 200px; */
+
+}
+
+.obstacleani{
+    animation: obstacleani 3s linear infinite;
+}
+
+
+
+.animateshin{
+    animation: shinchan 0.9s linear;
+}
+
+#scorecont{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top:20px;
+    position: absolute;
+    left: 30px;
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+.gameover{
+    position: absolute;
+    top: 16px;
+    font-size: 16vh;
+    left: 410px;
+    color: crimson;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    visibility:hidden;
+}
+
+@keyframes shinchan{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 322px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes obstacleani {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left:-10vw;
+    }
+    
+}
